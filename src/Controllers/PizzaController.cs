@@ -46,7 +46,7 @@ namespace ContosoPizza.Controllers
             return NoContent();
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public IActionResult Delete(int id){
             var pizza = PizzaService.Get(id);
 
